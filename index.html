@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Serviços de Manutenção Predial</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    /* Topo com mensagem */
+    .topbar {
+      background-color: #004aad;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      font-weight: 500;
+      font-size: 0.95em;
+    }
+
+    header {
+      background: linear-gradient(135deg, #004aad, #0078ff);
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    header h1 {
+      font-size: 2em;
+      font-weight: 700;
+    }
+
+    header p {
+      font-size: 1.1em;
+      margin-top: 10px;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      margin-top: 40px;
+    }
+
+    .card {
+      background-color: white;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    .card h3 {
+      color: #004aad;
+      margin-bottom: 15px;
+    }
+
+    footer {
+      background-color: #004aad;
+      color: white;
+      text-align: center;
+      padding: 25px 10px;
+      font-size: 0.9em;
+    }
+
+    /* Botão flutuante do WhatsApp */
+    .whatsapp-float {
+      position: fixed;
+      width: 60px;
+      height: 60px;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: #fff;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 32px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      z-index: 100;
+      transition: 0.3s;
+    }
+
+    .whatsapp-float:hover {
+      transform: scale(1.1);
+      background-color: #1ebe5a;
+    }
+
+    .whatsapp-icon {
+      margin-top: 14px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.6em;
+      }
+      .topbar {
+        font-size: 0.85em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="topbar">📞 Orçamentos sem compromisso!</div>
+
+  <header>
+    <h1>Manutenção Predial Completa</h1>
+    <p>Reparos, Construção, Instalações e Monitoramento com Qualidade e Confiança</p>
+  </header>
+
+  <section>
+    <h2 style="text-align:center; color:#004aad;">Nossos Serviços</h2>
+    <div class="services">
+      <div class="card">
+        <h3>Reparos Elétricos e Hidráulicos</h3>
+        <p>Troca de tomadas, disjuntores, fiações, encanamentos, torneiras e mais.</p>
+      </div>
+      <div class="card">
+        <h3>Manutenção Predial</h3>
+        <p>Serviços completos para manter seu prédio seguro, funcional e bem conservado.</p>
+      </div>
+      <div class="card">
+        <h3>Construção e Reformas</h3>
+        <p>Trabalhamos com obras novas, reformas residenciais e comerciais com acabamento profissional.</p>
+      </div>
+      <div class="card">
+        <h3>Pintura e Acabamento</h3>
+        <p>Serviços de pintura interna e externa com materiais de alta durabilidade.</p>
+      </div>
+      <div class="card">
+        <h3>Instalações e Montagens</h3>
+        <p>Instalação de portas, janelas, pisos, luminárias e estruturas diversas.</p>
+      </div>
+      <div class="card">
+        <h3>Instalação de Câmeras e Monitoramento</h3>
+        <p>Instalamos câmeras Wi-Fi, configuramos sistemas de segurança e monitoramento remoto com acesso pelo celular.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Manutenção Predial | Todos os direitos reservados</p>
+    <p>📞 (16) 99230-1820 | Ribeirão Preto - SP</p>
+  </footer>
+
+  <!-- Botão Flutuante do WhatsApp -->
+  <a href="https://wa.me/5516992301820?text=Olá!%20Gostaria%20de%20um%20orçamento%20sem%20compromisso." 
+     class="whatsapp-float" 
+     target="_blank" 
+     aria-label="Contato WhatsApp">
+    <div class="whatsapp-icon">💬</div>
+  </a>
+
+</body>
+</html>
